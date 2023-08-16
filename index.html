@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="contblock">
+            <div class="image">
+                <img src="images/illustration-sign-up-desktop.svg" alt="">
+            </div>
+            <header>
+                <h1>Stay updated!</h1>
+                <p class="context">Join 60,000+ product managers receiving monthly updates on:</p>
+                <ul>
+                    <li>
+                        <img src="images/icon-list.svg" alt="">
+                        <p>Product discovery and building what matters</p>
+                    </li>
+                    <li>
+                        <img src="images/icon-list.svg" alt="">
+                        <p>Measuring to ensure updates are a success</p>
+                    </li>
+                    <li>
+                        <img src="images/icon-list.svg" alt="">
+                        <p>And much more!</p>
+                    </li>
+                </ul>
+                <form class="subscribe-form">
+                    <div>
+                        <label><b>Email address</b></label>
+                        <span id="message">Valid email required</span>
+                        <input type="email" name="email" id="emailInput" placeholder="email@company.com">
+                    </div>
+                    <button id="submitBtn" type="button" onclick="validateEmail()">Subscribe to monthly newsletter</button>
+            </header>
+
+        </div>
+        <div class="image1">
+            <img src="images/illustration-sign-up-desktop.svg" alt="">
+        </div>
+    </div>
+
+    <!-- Subscribing -->
+    <div class="row" id="row">
+        <div class="rows">
+            <div class="row-1">
+                <img src="images/icon-success.svg" alt="">
+                <h1>Thanks for subscribing!</h1>
+                <p>A confirmation email has been sent to <b>ash@loremcompany.com.</b>  <br>
+                    Please open it and click the button inside to confirm your subscription.
+                  </p>
+                <button class="btn" id="closeBtn">Dismiss message</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

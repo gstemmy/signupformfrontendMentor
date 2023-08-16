@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --color1: hsl(234, 29%, 20%);
+    --color2: hsl(235, 18%, 26%);
+    --color3: hsl(231, 7%, 60%);
+    --color4: hsl(0, 0%, 100%);
+    --color5: hsl(4, 100%, 67%);
+}
+body{
+    position: relative;
+    padding: 50px;
+    background-color: var(--color2);
+    color: var(--color1);
+}
+.container {
+    margin: auto;
+    background-color: var(--color4);
+    border-radius: 30px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.container .image{
+    display: none;
+}
+.container .contblock{
+    width: 100%;
+}
+.container header {
+    width: 100%;
+}
+.container .image1{
+    width: 100%;
+}
+.container .image1 img{
+    width: 100%;
+}
+.container h1{
+    color: var(--color1);
+    font-size: 50px;
+}
+.container p.context{
+    margin: 30px 0px;
+}
+.container ul li{
+    font-size: 16px;
+    margin: 15px 0px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+form{
+    margin-top: 50px;
+}
+form div{
+    position: relative;
+    margin-bottom: 10px;
+}
+form div label{
+    font-size: 12px;
+}
+form div span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--color5);
+    font-size: 12px;
+    display: none;
+}
+form div span.active{
+    display: block;
+}
+form div input{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+input.active{
+    border-color: var(--color5);
+    color: var(--color5);
+}
+form div input::placeholder{
+    font-size: 13px;
+    color: var(--color2);
+}
+form div input.active::placeholder{
+    color: var(--color5);
+}
+form button, .row button{
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--color1);
+    color: var(--color4);
+    border-radius: 10px;
+    padding: 15px 10px;
+    transition: all 0.3s ease-in-out;
+}
+form button:hover, .row button:hover{
+    background: var(--color5);
+    border-color: var(--color5);
+}
+
+
+/* Subscribing */
+.row{
+    background-color: var(--color2); 
+    padding: 100px 10px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    
+}
+.rows{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.row .row-1{
+    margin: auto;
+    background-color: var(--color4); 
+    border-radius: 30px;
+    padding: 50px;
+}
+.row h1{
+    font-size: 40px;
+}
+.row img{
+    margin-bottom: 30px;
+}
+.row p{
+    margin: 20px 0;
+    line-height: 1.4;
+    font-weight: 500;
+}
+@media(max-width: 915px){
+    body{
+        padding: 30px;
+    }
+    .container h1{
+        font-size: 40px;
+    }
+    form button{
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+}
+@media(max-width: 770px){
+    body{
+        padding: 10px;
+    }
+    .container h1{
+        font-size: 35px;
+    }
+    form button{
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+    .container p{
+        font-size: 14px;
+    }
+}
+@media(max-width: 700px){
+    body{
+        background-color: var(--color4);
+        padding: 0px;
+    }
+    .container {
+        border-radius: 0px;
+        padding: 0px;
+        display: block;
+    }
+    .container .image{
+        display: block;
+        width: 100%;
+    }
+    .container .image img{
+        width: 100%;
+    }
+
+    .container header {
+        padding: 50px;
+    }
+    .container .image1{
+        display: none;
+    }
+    .container h1{
+        font-size: 50px;
+    }
+    form button{
+        font-size: 16px;
+        padding: 10px 5px;
+    }
+    .container p{
+        font-size: 16px;
+    }
+    
+    /* Subscribing */
+    .row{
+        padding: 50px 30px;
+        background-color: var(--color4); 
+    }
+    .row .row-1{
+        border-radius: 0px;
+        padding: 50px 0px 0px;
+    }
+    .row h1{
+        font-size: 30px;
+    }
+    .row button{
+        margin-top: 15rem;
+    }
+}
+@media(max-width: 455px){
+    .container header {
+        padding: 40px;
+    }
+    .container h1{
+        font-size: 40px;
+    }
+    form button{
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+    .container p{
+        font-size: 14px;
+    }
+    .row h1{
+        font-size: 20px;
+    }
+}
+@media(max-width: 375px) {
+    .container header {
+        padding: 30px;
+    }
+    .container h1{
+        font-size: 30px;
+    }
+    form button{
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+    .container p{
+        font-size: 12px;
+    }.row h1{
+        font-size: 17px;
+    }
+}
